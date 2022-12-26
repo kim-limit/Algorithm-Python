@@ -46,15 +46,15 @@ def checkIsSame(str, left, right):
     if str == str[::-1]: # 바로 화문인 경우
         return 0
     while left < right: # 1 or 2
-        if str[left] == str[right]:
+        if str[left] == str[right]: # 같으면 한칸씩 이동
             left += 1
             right -= 1
         else:
-            leftCheck = finalCheck(str, left + 1, right)
-            rightCheck = finalCheck(str, left, right-1)
-            if leftCheck or rightCheck:
+            leftCheck = finalCheck(str, left + 1, right) # 왼쪽 한칸 건너뜀
+            rightCheck = finalCheck(str, left, right-1) # 오른쪽 한칸 건너뜀
+            if leftCheck or rightCheck: # 다른 문자 안나왔으면 회문임
                 return 1
-            else:
+            else: # 다른 문자 나온 경우
                 return 2
     return 1
     
