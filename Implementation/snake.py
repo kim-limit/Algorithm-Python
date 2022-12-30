@@ -40,7 +40,7 @@ def solution():
     while True:
         x += dx[dir]  # 1칸이동
         y += dy[dir]
-        if x <= n and y <= n and x >=1 and y >= 1 and maps[x][y] != 1: # 벽이나 몸에 안부딫힌 경우
+        if x <= n and y <= n and x >=1 and y >= 1 and maps[x][y] != 1: # 벽이나 몸에 안부딪힌 경우
             if maps[x][y] != 2: # 사과없음
                 px, py = snake_index.pop(0)  # 꼬리 한칸이동
                 maps[px][py] = 0
