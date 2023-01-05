@@ -12,6 +12,7 @@ for i in range(k):
         result += b[i]
     else:
         result += a[i]
+        
 for i in range(k, len(a)):
     result += a[i]
 print(result)

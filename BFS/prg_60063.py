@@ -47,11 +47,6 @@ def bfs(board, n):
                 visited.append(next_index)
     return 0
 
-
-
-
-
-
 def solution(board):
     answer = 0
     n = len(board)
