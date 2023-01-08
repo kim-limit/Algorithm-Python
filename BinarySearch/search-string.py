@@ -2,7 +2,7 @@ from bisect import bisect_left, bisect_right
 def count_by_range(array, left_value, right_value):
     left_index = bisect_left(array, left_value)
     right_index = bisect_right(array, right_value)
-    print(array, left_value, right_value)
+
     return right_index - left_index
 
 def solution(words, queries):
