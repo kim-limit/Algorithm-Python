@@ -35,7 +35,7 @@ def bfs():
 
 time = 0
 while True:
-    time +=1
+    time += 1
     visited = [[0] * m for _ in range(n)]
     cnt = bfs() 
     if cnt == 0:
