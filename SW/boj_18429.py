@@ -8,12 +8,10 @@ def dfs(result, depth):
             visited[i] = 1
             dfs(result + arr[i] - k, depth + 1)
             visited[i] = 0
-n, k = map(int, input().split())
 
+n, k = map(int, input().split())
 arr = list(map(int, input().split()))
 visited = [0] * n
 cnt = 0
 dfs(0,0)
 print(cnt)
-
-
