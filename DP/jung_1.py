@@ -4,7 +4,6 @@ dp = [0] * (n + 1)
 dp[0] = 1
 arr = list(map(int, input().split()))
 index = max(arr) # 최대 인덱스
-
 for i in arr:
     dp[i] += 1
 
